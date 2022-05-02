@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Employee[] employees = new Employee[10];
-        Employee employee1 = new Employee("Test1", 10, 1);
-        Employee employee2 = new Employee("Test2", 5, 2);
+        Employee employee1 = new Employee("Test1", 10, "1");
+        Employee employee2 = new Employee("Test2", 5, "2");
 
         employees[0] = employee1;
         employees[1] = employee2;
@@ -25,6 +25,7 @@ public class Main {
                 System.out.println(employee);
             }
         }
+        printDelimiter();
     }
 
     public static double getMonthlySalaryExpenses(Employee[] employees) {
@@ -74,5 +75,10 @@ public class Main {
 
             }
         }
+        printDelimiter();
+    }
+
+    public static void printDelimiter() {
+        System.out.println("====================");
     }
 }

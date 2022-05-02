@@ -1,13 +1,15 @@
 package com.lexxkit;
 
 public class Employee {
-    int id;
-    String fullName;
-    double salary;
-    int department;
+    private static int idCounter = 1;
+
+    private int id;
+    private String fullName;
+    private double salary;
+    private int department;
 
     public Employee(String fullName, double salary, int department) {
-        this.id = Main.getIdCounter();
+        this.id = idCounter++;
         this.fullName = fullName;
         this.salary = salary;
         this.department = department;
@@ -25,15 +27,25 @@ public class Employee {
         return salary;
     }
 
-    public int getDepartment() {
-        return department;
-    }
-
     public void setSalary(double salary) {
         this.salary = salary;
     }
 
+    public int getDepartment() {
+        return department;
+    }
+
     public void setDepartment(int department) {
         this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", salary=" + salary + " rubles" +
+                ", department=" + department +
+                '}';
     }
 }

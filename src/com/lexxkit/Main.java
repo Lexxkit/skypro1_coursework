@@ -11,10 +11,10 @@ public class Main {
         employees[1] = employee2;
 
         printEmployees(employees);
-        System.out.println(getMonthlySalaryExpenses(employees));
+        System.out.println("Total monthly salary is " + getMonthlySalaryExpenses(employees) + " rubles.");
         System.out.println("Employee with minimal salary is " + getEmployeeWithMinSalary(employees));
         System.out.println("Employee with maximum salary is " + getEmployeeWithMaxSalary(employees));
-        System.out.println("Average monthly salary is " + getAverageMonthlySalary(employees));
+        System.out.println("Average monthly salary is " + getAverageMonthlySalary(employees) + " rubles.");
         printEmployeesFullname(employees);
 
     }

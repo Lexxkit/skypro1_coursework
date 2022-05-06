@@ -50,6 +50,23 @@ public class Main {
         printDelimiter();
         employeeBook.indexSalary(10);
         employeeBook.printAllEmployees();
+
+        printDelimiter();
+        employeeBook.printEmployeesForDepartment("1");
+
+        printDelimiter();
+        System.out.println(employeeBook.getMonthlySalaryExpensesByDepartment("1"));
+
+        printDelimiter();
+        employeeBook.printEmployeesWithSalaryLessThan(40);
+        employeeBook.printEmployeesWithSalaryLessThan(20);
+
+        printDelimiter();
+        employeeBook.printEmployeesWithSalaryGraterOrEqualThan(20);
+        employeeBook.printEmployeesWithSalaryGraterOrEqualThan(100);
+
+        printDelimiter();
+        employeeBook.printAllEmployeesByDepartment();
     }
 
 //    public static void printInfoByDepartment(Employee[] employees, String department) {
